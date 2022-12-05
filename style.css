@@ -5,14 +5,16 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
+    scroll-behavior: smooth;
 }
 p{
     font-weight: 300;
-    color: rgb(149, 104, 104);
+    color: #060505;
 }
 body{
     min-height: 1000px ;
 }
+
 .banner{
     position: relative;
     width: 100%;
@@ -30,18 +32,19 @@ body{
 }
 .banner .content h2{
  font-size: 5em;
- color: #fff; 
+ color: rgb(245, 233, 233); 
 }
 .banner .content{
     font-size: 1em;
-    color: #fff;
+    color: rgb(41, 35, 35);
 }
 .btn {
     font-size: 1em;
-    color: #fff;
+    color: rgb(19, 16, 16);
     background: #ff0157;
     display: inline-block;
     padding: 10px 30px;
+    border-radius: 30px;
     margin-top: 20px;
     text-transform: uppercase;
     text-decoration: none;
@@ -51,6 +54,23 @@ body{
 .btn:hover{
     letter-spacing: 5px;
 }
+nav {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px 8%;
+    transition: backgroud 2s;
+}
+nav .hover{
+    background: white;
+
+}
+
+nav ul li a:hover{
+    color: #ff0157;
+    transition: .4s;
+}
 header{
     position: fixed;
     top: 0;
@@ -59,14 +79,15 @@ header{
     padding: 40px 100px;
     z-index: 10000;
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
     transition: 0.5s;
+    background-color: white;
 }
 
-
 header .logo{
-    color: #fff;
+    color: rgb(37, 31, 31);
     font-weight: 700;
     font-size: 2em;
     text-decoration: none;
@@ -84,7 +105,7 @@ header .navigation li{
 }
 header .navigation li a {
     text-decoration: none;
-    color: #fff;
+    color: rgb(0, 0, 0);
     font-weight: 400;
 }
 section{
@@ -96,17 +117,37 @@ section{
     display: flex;
     justify-content: space-between;
 }
-row .col150{
+.col150{
     position: relative;
-    width: 30%;
+    width: 1000px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
 }
-.titleText{
-    color: rgb(25, 21, 21);
+
+.titleText{ 
+    color: rgb(29, 25, 25);
     font-size: 2em;
     font-weight: 300;
 }
+
 .titleText span{
     color:#ff0157;
     font-weight: 700;
     font-size: 1.5em;
+}
+.title{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.TYPOGRAPHY .content .box{
+   
+    margin: 10px;
+    border: 15px solid #fff;
+    box-shadow: 0 5px 35px rgba(0,0,0,0.89);
 }
