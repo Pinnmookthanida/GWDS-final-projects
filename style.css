@@ -13,6 +13,7 @@ p{
 }
 body{
     min-height: 1000px ;
+    background: linear-gradient(#eaaabf, #fff);
 }
 
 .banner{
@@ -63,12 +64,12 @@ nav {
     transition: backgroud 2s;
 }
 nav .hover{
-    background: white;
+    background: rgb(173, 139, 139);
 
 }
 
 nav ul li a:hover{
-    color: #ff0157;
+    color: #ffffff;
     transition: .4s;
 }
 header{
@@ -83,7 +84,7 @@ header{
     justify-content: space-between;
     align-items: center;
     transition: 0.5s;
-    background-color: white;
+    background-color: rgb(255, 133, 164);
 }
 
 header .logo{
@@ -118,12 +119,16 @@ section{
     justify-content: space-between;
 }
 .col150{
+    margin: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
     position: relative;
-    width: 1000px;
+    width: 600px;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
     flex-wrap: wrap;
+    flex-direction: column;
 }
 
 .titleText{ 
@@ -150,4 +155,33 @@ section{
     margin: 10px;
     border: 15px solid #fff;
     box-shadow: 0 5px 35px rgba(0,0,0,0.89);
+    
 }
+
+.container{
+    background: #ffffff;
+    width: 100%;
+    padding: 100px 0px;
+}
+
+.box1{
+    width:1500px;
+    height:400px;
+    margin: 10px;
+    padding: 50px;
+    padding-left: 200px;
+    background: #eaaabf;
+}
+.button {
+    background-color: #23b7ed; 
+    border: none;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 50px;
+  }
