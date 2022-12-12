@@ -14,11 +14,12 @@ p{
 body{
     min-height: 1000px ;
     background: linear-gradient(#eaaabf, #fff);
+    border: 1px dashed green;
 }
 
 .banner{
     position: relative;
-    width: 100%;
+    /* width: 100%; */
     min-height: 100vh;
     display: flex;
     justify-content: center;
@@ -28,7 +29,7 @@ body{
 }
 .banner .content
 {
-    max-width: 900px;
+    /* max-width: 900px; */
     text-align: center;
 }
 .banner .content h2{
@@ -60,7 +61,8 @@ nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 50px 8%;
+    flex-wrap: wrap;
+    /* padding: 50px 8%; */
     transition: backgroud 2s;
 }
 nav .hover{
@@ -99,6 +101,7 @@ header .logo span{
 header .navigation{
     position: relative;
     display: flex;
+    flex-wrap: wrap;
 }
 header .navigation li{
     list-style: none;
@@ -154,6 +157,7 @@ section{
    
     margin: 10px;
     border: 15px solid #fff;
+    display: flex;
     box-shadow: 0 5px 35px rgba(0,0,0,0.89);
     
 }
@@ -165,12 +169,15 @@ section{
 }
 
 .box1{
-    width:1500px;
-    height:400px;
+    width:100%;
     margin: 10px;
     padding: 50px;
-    padding-left: 200px;
+    display: flex;
     background: #eaaabf;
+}
+
+.codeimg{
+    width:100%;
 }
 .button {
     background-color: #23b7ed; 
@@ -185,3 +192,33 @@ section{
     cursor: pointer;
     border-radius: 50px;
   }
+
+@media only screen and  (max-width: 1000px){
+    section{
+        padding:0px;
+    }
+
+}
+@media only screen and  (max-width: 600px){
+    header{
+        padding:20px 50px;
+    }}
+
+    @media only screen and  (max-width: 600px){
+        .col150{
+            width: 100%;
+        }}
+  /* @media only screen and (max-width:700px) {
+    nav ul{
+        width: 100%;
+        position: absolute;
+        top: 75px;
+        right: 0;
+        z-index: 2;
+    }
+    nav ul li{
+        display: block;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+} */
