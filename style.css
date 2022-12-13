@@ -193,6 +193,12 @@ section{
     border-radius: 50px;
   }
 
+  .typop {
+    padding-top: 50px;
+    padding: 50px;
+    color: #ffffff;
+  }
+
 @media only screen and  (max-width: 1000px){
     section{
         padding:0px;
